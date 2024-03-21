@@ -6,9 +6,9 @@
   <title></title>
 </head>
 
-<body>
+<body style="background-color:#F9EFE4">
   <br>
-  <h3 style="text-align:center">Tambah Project</h3>
+  <h3 style="text-align:center">Add Project</h3>
   <form action="proses_tambah_project.php" method="post">
     <br>
     <ul>
@@ -82,7 +82,7 @@
       </div>
 
       <br>
-      <input type="submit" name="simpan" value="Tambah Project" class="btn btn-primary">
+      <input type="submit" name="simpan" value="Save Project" class="btn btn-primary">
 </ul>
   </form>
 

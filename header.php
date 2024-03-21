@@ -20,6 +20,9 @@
 
   <link rel="stylesheet" href="assets/css/theme.css">
 
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+
 </head>
 <body>
 
@@ -28,9 +31,9 @@
 
   <header>
     
-    <nav class="navbar navbar-expand-lg navbar-light navbar-float" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FFCC99;">
       <div class="container">
-        <a href="header.php" class="navbar-brand">List <span class="text-primary">TO DO</span></a>
+        <a href="header.php" class="navbar-brand" style="color:#3F3636;">List TO DO</a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,14 +41,14 @@
 
         <div class="navbar-collapse collapse" id="navbarContent">
           <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
-            <li class="nav-item-active">
+            <li class="nav-item">
               <a  href="dashboard.php" class="nav-link">Dashboard</a>
             </li>
             <li class="nav-item">
               <a href="project_list.php" class="nav-link">Project List</a>
             </li>
             <li class="nav-item">
-              <a href="todo.php" class="nav-link">List TO DO</a>
+              <a href="todo.php" class="nav-link">TO DO List</a>
             </li>
           </ul>
 

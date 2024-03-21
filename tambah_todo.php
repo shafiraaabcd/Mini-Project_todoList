@@ -11,9 +11,9 @@
     </style>
 </head>
 
-<body>
+<body style="background-color:#F9EFE4">
   <br>
-  <h3 style="text-align:center">Tambah TO DO</h3>
+  <h3 style="text-align:center">Add TO DO</h3>
   <form action="proses_tambah_todo.php" method="post">
     <br>
     <ul>
@@ -58,7 +58,7 @@
       </div>
 
       <br>
-      <input type="submit" name="simpan" value="Tambah TO DO" class="btn btn-primary">
+      <input type="submit" name="simpan" value="Save TO DO" class="btn btn-primary">
 </ul>
   </form>
 

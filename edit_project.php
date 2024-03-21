@@ -4,7 +4,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title></title>
 </head>
-<body>
+<body style="background-color:#F9EFE4">
     <?php
     include "koneksi.php";
     $qry_get_project=mysqli_query($conn,"select * from project_list where id = '".$_GET['id']."'");
@@ -32,27 +32,26 @@
       
       <fieldset class="row mb-2">
         <legend class="col-form-label col-sm-3">Priority</legend>
-        <div class="col-sm-6">
-          <select name="priority" class="form-control">
-            <option></option>
-            <option value="High">High</option>
-            <option value="Medium">Medium</option>
-            <option value="Low">Low</option>
-          </select>
-        </div>
+             <div class="col-sm-6">
+                 <select name="priority" class="form-control">
+                   <option value="High">High</option>
+                   <option value="Medium">Medium</option>
+                   <option value="Low">Low</option>
+                  </select>
+               </div>
       </fieldset>
 
-      <fieldset class="row mb-2">
-        <legend class="col-form-label col-sm-3">Status</legend>
-        <div class="col-sm-6">
-          <select name="status" class="form-control">
-            <option></option>
+<fieldset class="row mb-2">
+    <legend class="col-form-label col-sm-3">Status</legend>
+    <div class="col-sm-6">
+        <select name="status" class="form-control">
             <option value="Done">Done</option>
             <option value="Working on it">Working on it</option>
             <option value="Stuck">Stuck</option>
-          </select>
-        </div>
-      </fieldset>
+        </select>
+    </div>
+</fieldset>
+
 
       <div class="row mb-2">
         <label name="start" class="col-sm-3 col-form-label">Start</label>

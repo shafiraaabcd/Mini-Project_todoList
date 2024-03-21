@@ -4,7 +4,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title></title>
 </head>
-<body>
+<body style="background-color:#F9EFE4">
     <?php
     include "koneksi.php";
     $qry_get_todo=mysqli_query($conn,"select * from todo where id = '".$_GET['id']."'");
@@ -24,11 +24,12 @@
       </div>
 
       <div class="row mb-2">
-        <label name="task" class="col-sm-3 col-form-label">Task</label>
-        <div class="col-sm-6">
-          <textarea name="task" cols="30" rows="5" value="" class="form-control" value= "<?=$dt_todo['task']?>"></textarea>
-        </div>
+          <label for="task" class="col-sm-3 col-form-label">Task</label>
+            <div class="col-sm-6">
+               <textarea id="task" name="task" cols="30" rows="5" class="form-control"><?=$dt_todo['task']?></textarea>
+            </div>
       </div>
+
       
       <div class="row mb-2">
         <label name="deadline" class="col-sm-3 col-form-label">Deadline</label>
